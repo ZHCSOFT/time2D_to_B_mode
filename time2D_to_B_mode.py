@@ -77,7 +77,7 @@ def UT():
 
     specified_x = 370; specified_y = 305
 
-    target_test_folder = './result_B_mode'
+    target_test_folder = './pending/sample/database_2d_simulations_uffc/GE Vingmed Ultrasound/A2C/normal'
 
     img_ext = os.path.splitext(first_img_name)[1]
     img_digit_begin = int(os.path.splitext(first_img_name)[0])
