@@ -64,11 +64,11 @@ def main_proc():
         if not os.path.exists(save_path):
             os.makedirs(save_path)
         
-        img_B_mode_cols = gen_col_B_mode(img_list, specified_y)
-        img_B_mode_rows = gen_row_B_mode(img_list, specified_x)
+        img_B_mode_cols = gen_col_B_mode(img_list, specified_y, inverse=inverse_vertical)
+        img_B_mode_rows = gen_row_B_mode(img_list, specified_x, inverse=inverse_vertical)
 
-        cv2.imwrite(save_path+'/B_mode_cols.png', img_B_mode_cols, inverse=inverse_vertical)
-        cv2.imwrite(save_path+'/B_mode_rows.png', img_B_mode_rows, inverse=inverse_vertical)
+        cv2.imwrite(save_path+'/B_mode_cols.png', img_B_mode_cols)
+        cv2.imwrite(save_path+'/B_mode_rows.png', img_B_mode_rows)
 
 def UT():
 
